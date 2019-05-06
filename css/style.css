@@ -1,0 +1,362 @@
+/*! HTML5 t isdsdsd Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+/* ==========================================================================
+   Defaults: Color, Size, Font
+   ========================================================================== */
+/* ==========================================================================
+   Import Fonts: Helvetica Neue Greek, Helvetica Neue Greek Bold, Helvetica Neue Greek Light, PFGaramondClassic-Italic
+   ========================================================================== */
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+html {
+  color: #fff;
+  font-size: 1em;
+  line-height: 1.4; }
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+/*
+ * A better looking default horizontal rule
+ */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle; }
+
+/*
+ * Remove default fieldset styles.
+ */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+textarea {
+  resize: vertical; }
+
+/*
+ * Disable underlines on links
+ */
+a:hover {
+  text-decoration: none; }
+
+.form-control {
+  padding-right: 30px;
+  position: relative;
+  transition: 0.5s; }
+  @media screen and (max-width: 990px) {
+    .form-control {
+      margin-top: 15px; } }
+  .form-control.error .error-label {
+    display: block; }
+  .form-control .error-label {
+    display: none;
+    position: absolute;
+    bottom: 15px;
+    color: red;
+    text-transform: capitalize; }
+  .form-control > .fixed-label {
+    color: #27376c;
+    font-size: 20px;
+    font-weight: 600; }
+    .form-control > .fixed-label > span {
+      color: gray;
+      font-size: 12px; }
+  .form-control.active {
+    transition: 0.5s; }
+    .form-control.active > label {
+      top: -20px;
+      font-size: 15px; }
+    .form-control.active input {
+      transition: 0.5s;
+      border-bottom: 1px solid #ec008c; }
+  .form-control > input {
+    outline: none;
+    width: 100%;
+    max-height: 22px;
+    color: #454545;
+    font-size: 20px;
+    border: none;
+    border-bottom: 1px solid #e3e3e3;
+    box-shadow: none;
+    box-sizing: content-box;
+    margin-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px; }
+  .form-control > label {
+    position: absolute;
+    top: 10px;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+    color: #454545;
+    font-size: 20px;
+    cursor: text; }
+    .form-control > label span {
+      transition: 0.5s;
+      color: #ec008c;
+      font-size: 20px; }
+
+/*
+  checkbox
+*/
+input[type=checkbox] + label {
+  display: block;
+  margin: 0.2em;
+  cursor: pointer;
+  padding: 0.2em;
+  color: #27376c;
+  font-size: 20px; }
+
+input[type=checkbox] {
+  display: none; }
+
+input[type=checkbox] + label:before {
+  content: "\2714";
+  border: 0.1em solid #ec008c;
+  border-radius: 0.2em;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  padding-left: 0.2em;
+  padding-bottom: 0.3em;
+  margin-right: 10px;
+  vertical-align: bottom;
+  color: transparent;
+  transition: .2s; }
+
+input[type=checkbox] + label:active:before {
+  transform: scale(0); }
+
+input[type=checkbox]:checked + label:before {
+  background-color: white;
+  border-color: #ec008c;
+  color: #ec008c; }
+
+input[type=checkbox]:disabled + label:before {
+  transform: scale(1);
+  border-color: #aaa; }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: Arial; }
+
+.line {
+  width: 100%;
+  height: 2px;
+  background: #E03F3F; }
+
+.container {
+  width: 70%;
+  margin: auto; }
+
+header {
+  width: 100%; }
+  header .header-wrap {
+    display: flex;
+    justify-content: space-between; }
+    header .header-wrap .logo {
+      height: 70px;
+      display: flex;
+      align-items: center; }
+      header .header-wrap .logo h2 {
+        color: #000;
+        font-size: 25px; }
+    header .header-wrap nav {
+      display: flex;
+      justify-content: space-between;
+      width: 530px;
+      height: 70px;
+      align-items: center; }
+      header .header-wrap nav a {
+        color: #000;
+        font-size: 15px; }
+      header .header-wrap nav a:hover {
+        color: #E03F3F;
+        transition: 0.2s; }
+
+.banner {
+  width: 100%;
+  height: 700px;
+  background-image: url(../imgs/banner.png); }
+  .banner .overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.55); }
+    .banner .overlay .banner-wrap {
+      width: 100%;
+      height: 700px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center; }
+      .banner .overlay .banner-wrap .banner-text {
+        width: 500px; }
+        .banner .overlay .banner-wrap .banner-text h3 {
+          color: #fff;
+          font-size: 25px; }
+        .banner .overlay .banner-wrap .banner-text p {
+          margin-top: 10px;
+          color: #fff;
+          font-size: 45px; }
+        .banner .overlay .banner-wrap .banner-text h4 {
+          margin-top: 20px;
+          color: #fff;
+          font-size: 15px; }
+        .banner .overlay .banner-wrap .banner-text .banner-button {
+          margin-top: 30px;
+          width: 100%;
+          display: flex;
+          justify-content: flex-end; }
+          .banner .overlay .banner-wrap .banner-text .banner-button button {
+            width: 120px;
+            height: 40px;
+            color: #fff;
+            background-color: #E03F3F;
+            border-style: none;
+            outline: none; }
+          .banner .overlay .banner-wrap .banner-text .banner-button button:hover {
+            background-color: transparent;
+            transition: 0.5s;
+            border: 1px solid #fff; }
+
+.services {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #f5f5f5; }
+  .services .services-title h3 {
+    color: #000;
+    font-size: 22px; }
+  .services .services-title p {
+    color: #000;
+    font-size: 15px; }
+  .services .services-wrap {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .services .services-wrap .service-item {
+      width: 300px;
+      height: 200px;
+      margin-top: 50px;
+      background-color: #fff; }
+      .services .services-wrap .service-item .service-item-wrap {
+        padding: 20px; }
+        .services .services-wrap .service-item .service-item-wrap .service-item-title {
+          display: flex;
+          justify-content: space-evenly; }
+          .services .services-wrap .service-item .service-item-wrap .service-item-title i {
+            color: #474747;
+            font-size: 35px; }
+          .services .services-wrap .service-item .service-item-wrap .service-item-title h2 {
+            color: #E03F3F; }
+        .services .services-wrap .service-item .service-item-wrap p {
+          margin-top: 30px;
+          color: #474747;
+          text-align: center; }
+    .services .services-wrap .service-item:hover {
+      transition: 0.3s;
+      background-color: #E03F3F; }
+    .services .services-wrap .service-item:hover .service-item-title h2 {
+      color: #fff;
+      transition: 0.8s; }
+    .services .services-wrap .service-item:hover .service-item-title i {
+      color: #fff;
+      transition: 1.2s; }
+    .services .services-wrap .service-item:hover p {
+      color: #fff;
+      transition: 0.4s; }
+
+.feedback {
+  width: 100%;
+  height: 500px;
+  background-color: rgba(0, 0, 0, 0.55);
+  background-image: url(../imgs/banner.png); }
+  .feedback .overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.55); }
+    .feedback .overlay .feedback-wrap {
+      width: 100%;
+      height: 500px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      .feedback .overlay .feedback-wrap .user-img img {
+        width: 100px;
+        height: 100px;
+        border-radius: 100%; }
+      .feedback .overlay .feedback-wrap p {
+        margin-top: 40px;
+        text-align: center; }
+      .feedback .overlay .feedback-wrap .stars {
+        margin-top: 30px; }
+        .feedback .overlay .feedback-wrap .stars .fa {
+          color: #D4AF37; }
+      .feedback .overlay .feedback-wrap .feedback-name {
+        margin-top: 30px; }
+        .feedback .overlay .feedback-wrap .feedback-name h3 {
+          font-size: 25px; }
+      .feedback .overlay .feedback-wrap .controls {
+        margin-top: 50px;
+        width: 50px;
+        display: flex;
+        justify-content: space-between; }
+        .feedback .overlay .feedback-wrap .controls .control {
+          width: 12px;
+          height: 12px;
+          border-radius: 100%;
+          background-color: #fff;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          .feedback .overlay .feedback-wrap .controls .control .overlay {
+            width: 8px;
+            height: 8px;
+            border-radius: 100%;
+            background-color: #fff; }
+          .feedback .overlay .feedback-wrap .controls .control .overlay:hover {
+            background-color: #272727; }
